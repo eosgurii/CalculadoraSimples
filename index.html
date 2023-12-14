@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body>
+    <script>
+        function soma (x , y){
+    return x + y;
+}
+
+function subtração (x , y){
+    return x - y
+}
+
+function divisão (x , y){
+    return x / y
+}
+
+function multiplicação (x , y){
+    return x * y
+}
+
+
+
+function calculadora(){
+    let operacao = prompt ("Escrever qual operaçao deseja calcular");
+
+    if(operacao == "soma") {
+        let x = prompt ("Valor de X");
+        let y = prompt ("Valor de Y");
+        soma (x , y);
+         console.log (soma(parseInt(x), parseInt(y)))
+    }
+
+    else if(operacao == "subtração" || operacao == "subtracao") {
+        let x = prompt ("Valor de X");
+        let y = prompt ("Valor de Y");
+        subtração (x , y)
+        prompt (subtração(x,y));
+    }
+
+    else if (operacao == "divisão" || operacao == "divisao") {
+        let x = prompt ("Valor de X");
+        let y = prompt ("Valor de Y");
+        divisão (x , y)
+        prompt (divisão(x,y));
+    }
+
+    else if (operacao == "multiplicação" || operacao == "multiplicacao") {
+        let x = prompt ("Valor de X");
+        let y = prompt ("Valor de Y");
+        multiplicação (x , y)
+        prompt (multiplicação(x,y));
+    }
+    
+    else{
+        prompt("Ainda Estamos Trabalhando Nessa Variável! :/ ")
+    }
+
+
+} calculadora()
+
+
+
+
+
+
+
+
+
+
+    </script>
+   
+</body>
+</html>
